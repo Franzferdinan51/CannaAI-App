@@ -780,8 +780,20 @@ button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible
   .page {
     padding: 16px;
   }
+  .page-header {
+    padding-left: 52px; /* offset for hamburger button (44px) + gap */
+  }
   .page-header h2 {
     font-size: 20px;
+  }
+  .nav-item {
+    color: var(--text-secondary); /* brighter on mobile for readability */
+  }
+  .nav-item.active {
+    color: var(--accent);
+  }
+  .sidebar-footer {
+    color: var(--text-secondary); /* brighter on mobile */
   }
   .card-grid {
     grid-template-columns: 1fr;
@@ -798,8 +810,21 @@ button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible
     font-size: 26px;
   }
   .btn-lg {
-    padding: 12px 20px;
-    font-size: 14px;
+    padding: 14px 24px;
+    font-size: 15px;
+  }
+}
+
+/* ---- Dashboard Quick Actions ---- */
+.quick-actions-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+}
+
+@media (max-width: 480px) {
+  .quick-actions-grid {
+    grid-template-columns: 1fr;
   }
 }
 

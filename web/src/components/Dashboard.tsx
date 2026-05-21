@@ -107,7 +107,7 @@ export function Dashboard({ providers, reports, onNavigate }: Props) {
       {/* Quick Actions */}
       <div className="card" style={{ marginBottom: 24 }}>
         <div className="card-title" style={{ marginBottom: 16 }}>Quick Actions</div>
-        <div style={{ display: 'flex', gap: 12, flexWrap: 'wrap' }}>
+        <div className="quick-actions-grid">
           <button className="btn btn-primary" onClick={() => onNavigate('analysis')}>
             🌿 New Plant Analysis
           </button>
