@@ -1,0 +1,44 @@
+# Dependencies
+node_modules/
+
+# Build outputs
+dist/
+*.apk
+*.app
+*.xcarchive
+*.ipa
+
+# iOS
+ios/App/App.xcodeproj/xcuserdata/
+ios/App/App.xcworkspace/xcuserdata/
+ios/App/App/App.xcodeproj/xcuserdata/
+ios/**/DerivedData/
+ios/**/*.xcworkspace/
+ios/**/*.pbxuser
+
+# Android
+android/.gradle/
+android/app/build/
+android/build/
+android/*.iml
+android/.idea/
+
+# Web
+web/node_modules/
+web/dist/
+web/*.tsbuildinfo
+
+# OS
+.DS_Store
+*.swp
+*.swo
+Thumbs.db
+
+# Logs
+*.log
+npm-debug.log*
+
+# Secrets
+.env
+.env.*
+*.pem

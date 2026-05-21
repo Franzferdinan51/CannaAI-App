@@ -1,0 +1,6 @@
+{
+	"appId": "com.cannaai.app",
+	"appName": "CannaAI",
+	"webDir": "dist",
+	"packageClassList": []
+}
